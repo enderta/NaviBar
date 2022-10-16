@@ -12,7 +12,8 @@ const HomeNavi = () => {
 
                 </video>
                 <button className='home_btn'>
-                    <a className='home_link' href="/series">Login</a>
+                    <a className='home_link' href="/series" style={{"color":"green","textDecoration":"none"}}>
+                        <h1 className="link_text" >Login</h1></a>
                 </button>
 
             </div>
