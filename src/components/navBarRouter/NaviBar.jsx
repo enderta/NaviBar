@@ -1,6 +1,6 @@
 import React from 'react';
 
-const NaviBar = () => {
+const NaviBar = (props) => {
     return (
         <header className="p-3 text-bg-dark">
             <div className="container">
@@ -25,11 +25,7 @@ const NaviBar = () => {
                                 Home
                             </a>
                         </li>
-                        <li>
-                            <a href="/about" className="nav-link px-2 text-white">
-                                About
-                            </a>
-                        </li>
+
                         <li>
                             <a href="/series" className="nav-link px-2 text-white">
                                 Series
@@ -49,9 +45,11 @@ const NaviBar = () => {
                     <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                         <input
                             type="search"
-                            className="form-control form-control-dark text-bg-dark"
+                            className="form-control form-control-dark"
                             placeholder="Search..."
                             aria-label="Search"
+                            onChange={props.change}
+
                         />
                     </form>
 

@@ -10,10 +10,10 @@ import Movies from "./Movies";
 
 const MainNavi = () => {
     return (<div>
-        <NaviBar/>
+
         <Routes>
             <Route path="/" element={<HomeNavi/>}/>
-            <Route path="/about" element={<AboutNavi/>}/>
+
             <Route path="/series" element={<Series/>}/>
             <Route path="/series/:id" element={<Seasons/>}/>
             <Route path='/movies' element={<Movies/>}/>
