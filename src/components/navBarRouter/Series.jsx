@@ -41,8 +41,9 @@ const Series = () => {
                                                         <h5 className="card-title">Name: {item.name}</h5>
                                                         <p className="card-text">Rating: {item.rating.average}</p>
                                                         <p className="card-text">Language: {item.language}</p>
-                                                        <p className="card-text">Genres: {item.genres}</p>
+                                                        <p className="card-text">Genres: {item.genres[0]}</p>
                                                         <p className="card-text">Status: {item.status}</p>
+                                                        <a className={"btn btn-primary"} href={`/series/${item.id}`}>Seasons</a>
                                                     </div>
                                                 </div>
                                             </div>
