@@ -33,7 +33,7 @@ const Series = () => {
                 </div>
                 <div id="episodes" >
                     <div className="card" style={{background:"black"}}>
-                        <div className="row" style={{width: '100%', "margin": "3px"}} style={{background:"black",border:"darkred solid"}}>
+                        <div className="row" style={{width: '100%', "margin": "3px"}} >
                             {
                                 filtered.map((item) => {
                                         return (
