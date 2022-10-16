@@ -1,6 +1,6 @@
 import React from 'react';
 import NaviBar from "./NaviBar";
-import {Route, Router, Routes} from "react-router";
+import {Outlet, Route, Router, Routes} from "react-router";
 import Seasons from "./Seasons";
 import Series from "./Series";
 import AboutNavi from "./AboutNavi";
@@ -14,10 +14,15 @@ const MainNavi = () => {
         <Routes>
             <Route path="/" element={<HomeNavi/>}/>
 
-            <Route path="/series" element={<Series/>}/>
+            <Route path="/series" element={<Series/>}>
+
+
+
+            </Route>
             <Route path="/series/:id" element={<Seasons/>}/>
             <Route path='/movies' element={<Movies/>}/>
         </Routes>
+
 
     <Footer/>
 

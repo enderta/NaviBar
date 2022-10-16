@@ -1,5 +1,7 @@
 import React from 'react';
 import NaviBar from "./NaviBar";
+import {Route} from "react-router";
+import Seasons from "./Seasons";
 
 const Series = () => {
     const [show, setShow] = React.useState([]);
@@ -20,6 +22,7 @@ const Series = () => {
         setSearch(event.target.value);
         setFiltered(show.filter((show) => show.name.toLowerCase().includes(search.toLowerCase())));
     }
+
 
     return (
         <div>
@@ -43,7 +46,14 @@ const Series = () => {
                                                         <p className="card-text">Language: {item.language}</p>
                                                         <p className="card-text">Genres: {item.genres[0]}</p>
                                                         <p className="card-text">Status: {item.status}</p>
-                                                        <a className={"btn btn-primary"} href={`/series/${item.id}`}>Seasons</a>
+                                                        <div>
+
+                                                            <a href={'/series/' + item.id} className="btn btn-primary">Seasons</a>
+
+
+
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -55,6 +65,7 @@ const Series = () => {
                     </div>
                 </div>
             </div>
+
         </div>
     );
 }
