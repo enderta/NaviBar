@@ -29,3 +29,9 @@ link_text{
     color: #ffffff;
     text-align: center;
 }
+border{
+    width: 100%;
+    margin-bottom: 20px;
+    color: green;
+
+}

@@ -25,27 +25,27 @@ const Series = () => {
 
 
     return (
-        <div>
+        <div >
             <NaviBar data={filtered} change={handleChange}/>
             <div id="root">
                 <div id="controls">
 
                 </div>
-                <div id="episodes">
-                    <div className="card">
-                        <div className="row" style={{width: '100%', "margin": "3px"}}>
+                <div id="episodes" >
+                    <div className="card" style={{background:"black"}}>
+                        <div className="row" style={{width: '100%', "margin": "3px"}} style={{background:"black",border:"darkred solid"}}>
                             {
                                 filtered.map((item) => {
                                         return (
                                             <div className="col-3">
-                                                <div className="card" style={{"margin": "2px"}}>
+                                                <div className="card" style={{"margin": "2px"}} style={{background:"black",border:"darkred solid"}}>
                                                     <img src={item.image.medium} className="card-img-top" alt="..."/>
                                                     <div className="card-body">
-                                                        <h5 className="card-title">Name: {item.name}</h5>
-                                                        <p className="card-text">Rating: {item.rating.average}</p>
-                                                        <p className="card-text">Language: {item.language}</p>
-                                                        <p className="card-text">Genres: {item.genres[0]}</p>
-                                                        <p className="card-text">Status: {item.status}</p>
+                                                        <h5  style={{color:"green"}} className="card-title">Name: {item.name}</h5>
+                                                        <p style={{color:"green"}} className="card-text">Rating: {item.rating.average}</p>
+                                                        <p style={{color:"green"}} className="card-text">Language: {item.language}</p>
+                                                        <p style={{color:"green"}} className="card-text">Genres: {item.genres[0]}</p>
+                                                        <p style={{color:"green"}} className="card-text">Status: {item.status}</p>
                                                         <div>
 
                                                             <a href={'/series/' + item.id} className="btn btn-primary">Seasons</a>
