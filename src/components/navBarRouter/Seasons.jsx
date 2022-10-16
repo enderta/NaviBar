@@ -1,9 +1,11 @@
 import React from 'react';
 
 const Seasons = () => {
+
     return (
         <div>
-            seasons
+            <h1>seasons</h1>
+
         </div>
     );
 };
