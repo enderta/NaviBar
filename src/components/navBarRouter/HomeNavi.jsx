@@ -11,13 +11,19 @@ const HomeNavi = () => {
                     />
 
                 </video>
-                <button className='home_btn'>
-                    <a className='home_link' href="/series" style={{"color":"green","textDecoration":"none"}}>
-                        <h1 className="link_text" >Login</h1></a>
-                </button>
+                <div className="container">
+                    <button type="button" className='home_link1'  >
+                       <a className='home_link1_a'  href="/series" > <h1 className="link_text1" >Series</h1></a>
+                    </button>
+                    <button type="button" className='home_link2'  >
+                      <a className='home_link2_a' href="/movies" >  <h1 className="link_text2" >Movies</h1></a>
+                    </button>
+                </div>
 
             </div>
         </div>
+
+
     );
 };
 

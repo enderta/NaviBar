@@ -31,11 +31,7 @@ const NaviBar = (props) => {
                                 Series
                             </a>
                         </li>
-                        <li>
-                            <a href="/series/:id" className="nav-link px-2 text-white">
-                                Seasons
-                            </a>
-                        </li>
+
                         <li>
                             <a href="/movies" className="nav-link px-2 text-white">
                                 Movies

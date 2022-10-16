@@ -20,7 +20,7 @@ const Seasons = (props) => {
                         seasons.map((item) => {
                                 return (
                                     <div className="col-3" style={{background:"black"}}>
-                                        <div className="card" style={{"margin": "2px"}} style={{background:"black",border:"darkred solid"}}>
+                                        <div className="card" style={{"margin": "2px"}} style={{background:"black",border:"darkred solid",margin:'20px',padding:'2px'}}>
                                             <img src={item.image.medium} className="card-img-top" alt="..."/>
                                             <div className="card-body">
                                                 <h5 style={{color:"green"}} className="card-title">Name: {item.name}</h5>
