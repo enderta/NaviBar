@@ -24,8 +24,7 @@ const MainNavi = () => {
         </Routes>
 
 
-    <Footer/>
-
+ 
 </div>)
 
 };
