@@ -72,7 +72,7 @@ const Series = () => {
                                 filtered.map((item) => {
                                         return (
                                             <div className="col-3">
-                                                <div className="card" style={{"margin": "2px"}} style={{background:"black",border:"darkred solid",margin:'2px',padding:'2px'}}>
+                                                <div className="card" style={{"margin": "2px"}} style={{background:"black",border:"#D43C31 solid",margin:'2px',padding:'2px'}}>
                                                     <img src={item.image.medium} className="card-img-top" alt="..."/>
                                                     <div className="card-body">
                                                         <h5  style={{color:"green"}} className="card-title">Name: {item.name}</h5>
