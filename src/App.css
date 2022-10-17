@@ -54,10 +54,10 @@ border:none;
 
 }
 .link_text2{
-    animation: animate 1.5s linear infinite;
+    animation: animate 1s linear infinite;
 }
 .link_text1{
-    animation: animate 1.5s linear infinite;
+    animation: animate 1s linear infinite;
 }
 
 @keyframes animate{
