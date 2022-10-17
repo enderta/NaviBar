@@ -3,7 +3,6 @@ import NaviBar from "./NaviBar";
 import {Outlet, Route, Router, Routes} from "react-router";
 import Seasons from "./Seasons";
 import Series from "./Series";
-import AboutNavi from "./AboutNavi";
 import HomeNavi from "./HomeNavi";
 import Footer from "./Footer";
 import Movies from "./Movies";
@@ -13,7 +12,12 @@ const MainNavi = () => {
 
         <Routes>
             <Route path="/" element={<HomeNavi/>}/>
-            <Route path="/series" element={<Series/>}/>
+
+            <Route path="/series" element={<Series/>}>
+
+
+
+            </Route>
             <Route path="/series/:id" element={<Seasons/>}/>
             <Route path='/movies' element={<Movies/>}/>
         </Routes>
