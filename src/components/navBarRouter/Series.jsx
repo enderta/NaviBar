@@ -72,7 +72,7 @@ const Series = () => {
                                                         <p style={{color:"green"}} className="card-text">Status: {item.status}</p>
                                                         <div>
 
-                                                            <a href={'/series/' + item.id} className="btn btn-primary">Seasons</a>
+                                                            <a href={'/series/' + item.id} className="btn" style={{color:" #f3ce13",border:"solid 1px"}}>Seasons</a>
 
                                                         </div>
 
