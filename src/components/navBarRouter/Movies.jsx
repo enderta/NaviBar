@@ -57,6 +57,9 @@ const Movies = () => {
                                 <div style={{color:"green"}}  className="card-body">
                                     <p style={{color:"green"}}  className="card-text">{movie.Title}</p>
                                     <p style={{color:"green"}}  className="card-text">{movie.Year}</p>
+                                    <a style={{color:"green"}} href={`https://www.imdb.com/title/${movie.imdbID}/`} target='_blank' className="card-text">
+                                        <button className="btn" style={{color:" #f3ce13",border:"solid 1px"}}>IMDb</button>
+                                    </a>
                                     <div className="d-flex justify-content-between align-items-center">
                                     </div>
                                 </div>
