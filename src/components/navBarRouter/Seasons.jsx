@@ -36,7 +36,7 @@ const Seasons = (props) => {
                         </li>
                         <li>
                             <a href="/movies" className="nav-link px-2 text-white">
-                                Moveis
+                                Movies
                             </a>
                         </li>
                     </ul>
