@@ -56,19 +56,14 @@ const Series = () => {
                 </div>
             </header>
 
-            <div id="root">
-                <div id="controls">
-
-                </div>
-                <div id="episodes" >
-                    <div className="card" style={{background:"black"}}>
-                        <div className="row" style={{width: '100%', "margin": "3px"}} >
+                <div className="container">
+                    <div className="row">
                             {
                                 filtered.map((item) => {
                                         return (
-                                            <div className="col-3">
-                                                <div className="card" style={{"margin": "2px"}} style={{background:"black",border:"#D43C31 solid",margin:'2px',padding:'2px'}}>
-                                                    <img src={item.image.medium} className="card-img-top" alt="..."/>
+                                            <div className="col-md-4" >
+                                                <div className="card mb-4 shadow-sm" style={{background:"black",border:"#D43C31 solid",margin:'2px',padding:'2px'}}>
+                                                    <img src={item.image.medium} style={{"height":"400px",'weihgt':"200px"}} className="card-img-top" alt="..."/>
                                                     <div className="card-body">
                                                         <h5  style={{color:"green"}} className="card-title">Name: {item.name}</h5>
                                                         <p style={{color:"green"}} className="card-text">Rating: {item.rating.average}</p>
@@ -79,21 +74,24 @@ const Series = () => {
 
                                                             <a href={'/series/' + item.id} className="btn btn-primary">Seasons</a>
 
-
-
                                                         </div>
 
-                                                    </div>
+                                                        </div>
                                                 </div>
                                             </div>
+
+
+
+
+
                                         )
                                     }
                                 )
                             }
-                        </div>
+
                     </div>
                 </div>
-            </div>
+
 
         </div>
     );
