@@ -47,7 +47,9 @@ const Seasons = (props) => {
                 <select className="form-select" aria-label="Default select example" onChange={handleChange}>
                     {seasons.map((season) => {
                             return (<option
-                                value={season.name}>Season/Number: {season.season}/{season.number}-{season.name}</option>)
+                                value={season.name}>{`${season.name} - S${season.season
+                                .toString()
+                                .padStart(2, "0")}E${season.number.toString().padStart(2, "0")}`}</option>)
                         }
                     )}
                 </select>
