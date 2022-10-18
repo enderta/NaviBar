@@ -18,7 +18,7 @@ const Seasons = (props) => {
 
 
     return (
-        <body>
+        <body id='root'>
         <header id='root'>
             <div className="container">
                 <div
@@ -40,11 +40,9 @@ const Seasons = (props) => {
                             </a>
                         </li>
                     </ul>
-                    <div>
-                    </div>
-                </div>
 
-                <select className="form-select" aria-label="Default select example" onChange={handleChange}>
+                </div>
+                <select  className="form-select" aria-label="Default select example" onChange={handleChange}>
                     {seasons.map((season) => {
                             return (<option
                                 value={season.name}>{`${season.name} - S${season.season
@@ -53,46 +51,52 @@ const Seasons = (props) => {
                         }
                     )}
                 </select>
-                <div id="episodes" >
-                    <div className="card" style={{background:"black"}}>
-                        <div className="row" style={{width: '100%', "margin": "3px"}} >
-                            {
-                                seasons.filter((season) => season.name.toLowerCase().includes(search.toLowerCase())).map((item) => {
-                                        return (
-                                            <div className="col-3">
-                                                <div className="card" style={{"margin": "2px"}} style={{background:"black",border:"#D43C31 solid",margin:'2px',padding:'2px'}}>
-                                                    <img src={item.image.medium} className="card-img-top" alt="..."/>
-                                                    <div className="card-body">
-                                                        <h5 style={{color: "green"}}
-                                                            className="card-title">Name: {item.name}</h5>
-                                                        <p style={{color: "green"}}
-                                                           className="card-text">Season: {item.season}</p>
-                                                        <p style={{color: "green"}}
-                                                           className="card-text">Number: {item.number}</p>
-                                                        <p style={{color: "green"}}
-                                                           className="card-text">Airdate: {item.airdate}</p>
-                                                        <p style={{color: "green"}}
-                                                           className="card-text">Runtime: {item.runtime}</p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        )
-                                    }
-                                )
-                            }
-                        </div>
-                    </div>
-                </div>
             </div>
 
+
         </header>
+        <div className="container">
+            <div className="row">
+                {
+                    seasons.filter((season) => season.name.toLowerCase().includes(search.toLowerCase())).map((item) => {
+                            return (
+                                <div className="col-md-3">
+                                    <div className="card mb-4 shadow-sm" style={{
+                                        background: "black",
+                                        border: "#D43C31 solid",
+                                        margin: '2px',
+                                        padding: '2px'
+                                    }}>
+                                        <img src={item.image.medium} style={{"height": "300px", 'weihgt': "200px"}}
+                                             className="card-img-top" alt="..."/>
+                                        <div className="card-body">
+
+                                            <h5 style={{color: "green"}}
+                                                className="card-title">Name: {item.name}</h5>
+                                            <p style={{color: "green"}}
+                                               className="card-text">Season: {item.season}</p>
+                                            <p style={{color: "green"}}
+                                               className="card-text">Number: {item.number}</p>
+                                            <p style={{color: "green"}}
+                                               className="card-text">Airdate: {item.airdate}</p>
+                                            <p style={{color: "green"}}
+                                               className="card-text">Runtime: {item.runtime}</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        }
+                    )
+                }
+
+            </div>
+        </div>
+
+        </body>
 
 
-</body>
-
-
-)
+    )
 
 };
 
