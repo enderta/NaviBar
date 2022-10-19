@@ -10,12 +10,12 @@ const Seasons = (props) => {
     React.useEffect(() => {
         fetch(`https://api.tvmaze.com/shows/${params.id}/episodes`)
             .then(response => response.json())
-            .then(data => setSeasons(data));
+            .then(data => setSeasons(data.sort((a, b) => a.season - b.season)));
     }, []);
     const handleChange = (e) => {
         setSearch(e.target.value)
     }
-
+    
 
     return (
         <body id='root'>

@@ -13,7 +13,8 @@ const Series = () => {
                 .then(response => response.json())
                 .then(data => {
                     setShow(data);
-                    setFiltered(data);
+                    setFiltered(data.sort((a, b) => a.name.localeCompare(b.name)));
+
                 });
         }
         , []);
