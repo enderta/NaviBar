@@ -22,6 +22,7 @@ const Movies = () => {
 
     return (
         <div>
+            <header id='root' style={{margin:'10px'}}>
             <div className="container">
                 <div
                     className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -48,6 +49,7 @@ const Movies = () => {
 </form>
                 </div>
             </div>
+                </header>
             <div className="container">
                 <div className="row">
                     {movies.length > 0 && movies.map((movie, index) => (
