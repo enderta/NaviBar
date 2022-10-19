@@ -21,8 +21,8 @@
 .icon-style:hover{
     animation: none;
     background: #fff;
-    color: #551B54;
-    border: 2px solid #551B54;
+    color: green;
+    border: 2px solid green;
 }
 @keyframes movebtn {
     0%{
