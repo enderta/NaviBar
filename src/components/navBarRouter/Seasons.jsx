@@ -60,15 +60,9 @@ const Seasons = (props) => {
                 {
                     seasons.filter((season) => season.name.toLowerCase().includes(search.toLowerCase())).map((item) => {
                             return (
-                                <div className="col-md-3">
-                                    <div className="card mb-4 shadow-sm" style={{
-                                        background: "black",
-                                        border: "#D43C31 solid",
-                                        margin: '2px',
-                                        padding: '2px'
-                                    }}>
-                                        <img src={item.image.medium} style={{"height": "300px", 'weihgt': "200px"}}
-                                             className="card-img-top" alt="..."/>
+                                <div className="col-md-4" >
+                                    <div className="card mb-4 shadow-sm" style={{background:"black",border:"#D43C31 solid",margin:'2px',padding:'2px'}}>
+                                        <img src={item.image.medium} style={{"height":"500px",'weihgt':"200px"}} className="card-img-top" alt="..."/>
                                         <div className="card-body">
 
                                             <h5 style={{color: "green"}}
