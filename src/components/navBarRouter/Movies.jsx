@@ -53,7 +53,7 @@ const Movies = () => {
                     {movies.length > 0 && movies.map((movie, index) => (
                         <div className="col-md-4" key={index}>
                             <div className="card mb-4 shadow-sm" style={{background:"black",border:"#D43C31 solid",margin:'2px',padding:'2px'}}>
-                                <img src={movie.Poster} style={{"height":"600px",'weihgt':"200px"}} className="card-img-top" alt={movie.Title}/>
+                                <img src={movie.Poster} style={{"height":"500px",'weihgt':"200px"}} className="card-img-top" alt={movie.Title}/>
                                 <div style={{color:"green"}}  className="card-body">
                                     <p style={{color:"green"}}  className="card-text">{movie.Title}</p>
                                     <p style={{color:"green"}}  className="card-text">{movie.Year}</p>
