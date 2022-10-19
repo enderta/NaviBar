@@ -6,10 +6,11 @@ import Series from "./Series";
 import HomeNavi from "./HomeNavi";
 import Footer from "./Footer";
 import Movies from "./Movies";
+import ScrollToTop from "./ScrollToTop";
 
 const MainNavi = () => {
     return (<div>
-
+        <ScrollToTop />
         <Routes>
             <Route path="/" element={<HomeNavi/>}/>
 
