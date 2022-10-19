@@ -42,7 +42,7 @@ const Movies = () => {
                         <input
                             type="search"
                             className="form-control form-control-dark"
-                            placeholder="Search..."
+                            placeholder="Search Movies..."
                             aria-label="Search"
                             onChange={(e) => setSearchValue(e.target.value)}
                         />
