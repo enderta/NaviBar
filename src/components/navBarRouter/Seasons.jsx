@@ -40,9 +40,9 @@ const Seasons = (props) => {
                             </a>
                         </li>
                     </ul>
-
-                </div>
-                <select  className="form-select" aria-label="Default select example" onChange={handleChange}>
+                    <span>
+                        <h4 className="text-white">Seasons</h4>
+                         <select  className="form-select" aria-label="Default select example" onChange={handleChange}>
                     {seasons.map((season) => {
                             return (<option
                                 value={season.name}>{`${season.name} - S${season.season
@@ -51,6 +51,10 @@ const Seasons = (props) => {
                         }
                     )}
                 </select>
+                    </span>
+
+                </div>
+
             </div>
 
 
