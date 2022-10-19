@@ -11,7 +11,7 @@ const Movies = () => {
         const responseJson = await response.json();
 
         if (responseJson.Search) {
-            setMovies(responseJson.Search);
+            setMovies(responseJson.Search.sort((a,b)=>a.Year-b.Year));
         }
     };
 
