@@ -74,6 +74,7 @@ const Series = () => {
                                                         <div>
 
                                                             <a href={'/series/' + item.id} className="btn" style={{color:" #f3ce13",border:"solid 1px"}}>Seasons</a>
+                                                            <a href={item.url} target='_blank' className="btn" style={{color:" #f3ce13",border:"solid 1px",margin:"10px"}}>TVMAZE</a>
 
                                                         </div>
 
