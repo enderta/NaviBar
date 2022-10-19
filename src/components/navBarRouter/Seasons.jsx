@@ -83,7 +83,12 @@ const Seasons = (props) => {
                                                className="card-text">Runtime: {item.runtime}</p>
 
                                         </div>
+                                        <div>
+                                            <a href={item.url} target='_blank' className="btn" style={{color:" #f3ce13",border:"solid 1px",margin:"10px"}}>TVMAZE</a>
+                                        </div>
+
                                     </div>
+
                                 </div>
                             )
                         }
