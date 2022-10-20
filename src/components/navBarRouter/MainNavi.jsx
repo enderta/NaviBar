@@ -15,8 +15,7 @@ const MainNavi = () => {
             <Route path="/" element={<HomeNavi/>}/>
 
             <Route path="/series" element={<Series/>}>
-
-
+                
 
             </Route>
             <Route path="/series/:id" element={<Seasons/>}/>
